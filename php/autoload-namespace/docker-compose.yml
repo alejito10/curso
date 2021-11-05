@@ -1,0 +1,16 @@
+version: "3"
+services:
+  webserver:
+    build:
+      context: .
+      args:
+        user: alex
+        uid: 1000
+    image: php-environment
+    container_name: webserver-composer
+    environment:
+      - APACHE_RUN_USER=#1000
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/var/www/html

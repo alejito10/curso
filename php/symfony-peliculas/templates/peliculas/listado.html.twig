@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <h1>Listado de peliculas</h1>
+            <p>{{ "now"|date("m/d/Y H:m:s") }}</p>
+        </div>
+        <div class="row">
+            <ul>
+                {% for pelicula in peliculas %}
+                    <li><a href="/peliculas/{{ pelicula.imdb }}">{{ pelicula.titulo }}</a>--{{pelicula.valoracion}}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+{% endblock %}

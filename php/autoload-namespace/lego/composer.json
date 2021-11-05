@@ -1,0 +1,5 @@
+{
+    "require": {
+        "ricardofiorani/php-legofy": "^1.0"
+    }
+}

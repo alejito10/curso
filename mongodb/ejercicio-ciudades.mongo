@@ -1,0 +1,18 @@
+db.ciudades.insertMany(
+	{ ciudad: "Madrid", habitantes: 3233527, capital: "si" },
+	{ ciudad: "Barcelona", habitantes: 1620943 },
+	{ ciudad: "Valencia", habitantes: 797028 },
+	{ ciudad: "Sevilla", habitantes: 702355 },
+	{ ciudad: "Zaragoza", habitantes: 679624 }
+);
+db.ciudadesEspaña.find().sort({ ciudad: 1 }).limit(4); //ordenar por ciudad ascendente y solo mostrar 4
+db.ciudadesEspaña.find().sort({ habitantes: -1 }); //orden de poblacion descendente
+db.ciudadesEspaña.find({ ciudad: { $regex: "M" } }); //encontrar ciudad que empieza por la letra M
+db.ciudadesEspaña.find().sort({ ciudad: -1 }).sort({ habitantes: 1 }); //ordenad primero por nombre de la ciudad en orden descendente y luego por habitantes en orden ascendente.
+db.ciudadesEspaña.find({ capital: { $exists: "si" } }); //ver cual es capital de provincia
+db.ciudadesEspaña.find({ habitantes: { $gt: 1000000 } }); //muesta las qe tienen mas de un millon de habitantes
+db.ciudadesEspaña.find().count(); //el numero de documentos que tienes en la coleccion
+db.ciudadesEspaña.find({
+	$or: [{ ciudad: { $regex: "^B" } }, { ciudad: { $regex: "z$" } }],
+}); //saca los que empiezan por b o los que terminan por z
+db.ciudadesEspaña.find({ ciudad: { $in: ["Avila", "Zamora", "Madrid"] } }); //devuelve la ciudad que esta dentro del array

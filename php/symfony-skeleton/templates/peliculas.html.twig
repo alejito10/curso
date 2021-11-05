@@ -1,0 +1,15 @@
+{% extends "base.html.twig" %}
+{% block body %}
+<h1 class="titulo">Peliculas</h1>
+
+{% block content %}
+    <ul>
+    {% for pelicula in peliculas %}
+    <li>{{pelicula.titulo}}</li>
+    {% endfor %}
+
+{% endblock %}
+{% block content %} <a href="{{ 
+    url('descripcion.html.twig') 
+  }}">Home</a> {% endblock %}
+{% endblock %}

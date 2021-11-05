@@ -1,0 +1,5 @@
+{
+    "require": {
+        "ulabox/nif-validator": "^1.2"
+    }
+}

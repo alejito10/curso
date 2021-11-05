@@ -1,0 +1,10 @@
+npx express-generator -v twig -c sass --git  (para generar el proyecto)
+libreria
+npm i passport
+estrategia de conexion
+npm i passport-local
+para mantener la sesion
+npm i express-session
+en app.js require passpor y session para utilizarlos.
+se usa use para meter un nuevo midelware
+

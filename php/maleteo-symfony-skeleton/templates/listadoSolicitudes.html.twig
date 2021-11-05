@@ -1,0 +1,41 @@
+{% extends "base.html.twig" %}
+{% block stylesheets %}
+    {{ parent() }}
+
+    <link href="{{ asset('css/listado.css') }}" type="text/css" rel="stylesheet" />
+{% endblock %}
+{% block body %}
+
+	{% block header %}
+		<header class="logo-header">
+			<picture>
+				<a href="{{path('maleteo')}}"><img  src="assets/img/logo.svg" alt="logo" /></a>
+			</picture>
+		</header>
+	{% endblock %}
+
+<div class="contenedor">
+    <table class="tabla">
+    <tr class="encabezado">
+        <td>ID</td>
+        <td>Nombre</td>
+        <td>Email</td>
+        <td>Ciudad</td>
+    </tr>
+    {% for solicitud in solicitudes %}
+        <tr class="lista">
+
+            <td>{{solicitud.id}}</td>
+            <td>{{solicitud.nombre}}</td>
+            <td>{{solicitud.email}}</td>
+            <td>{{solicitud.ciudad}}</td>
+            
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+    
+
+
+
+{% endblock %}

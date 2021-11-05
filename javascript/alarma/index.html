@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarma</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="alarma">
+            <input id="segundos" type="number" step="1" value="0" min="0" max="10">
+        </div>
+        <div class="botones">
+            <button id="arrancar-alarma" onclick="arrancarAlarma()">Establecer Alarma</button>
+            <button id="parar-alarma" onclick="pararAlarma()" disabled>Cancelar Alarma</button>
+        </div>
+    </div>
+    <script src="js/miscript.js"></script>
+</body>
+
+</html>

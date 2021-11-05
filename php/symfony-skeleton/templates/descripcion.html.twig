@@ -1,0 +1,10 @@
+{% extends "base.html.twig" %}
+<h1 class="titulo">Peliculas</h1>
+
+{% block content %}
+    <ul>
+    {% for pelicula in peliculas %}
+    <li>{{pelicula.descripcion}}</li>
+    {% endfor %}
+{% endblock %}
+{% endblock %}

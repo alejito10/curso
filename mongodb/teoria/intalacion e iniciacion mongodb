@@ -1,0 +1,24 @@
+[9:01] Roberto Cruzado
+    saludos equipo...
+entre esta tarde y mañana miércoles, haremos nuestra primera incursión a MongoDB, tocando teoría y consola...
+Necesito que probéis a instalar mongoDB en vuestro Ubuntu:
+
+ 
+1.- Actualización de paquetes: sudo apt-get update
+
+
+2.- Después, para instalarlo, escribimos en la terminal:  sudo apt install mongodb
+   (y si no funcionara:  sudo apt-get install -y mongodb-org )
+
+
+3.-Cuando haya terminado de instalarse, lo podemos ejecutar escribiendo:
+
+sudo service mongod start
+
+
+4.- Y para conectarnos a la consola de MongoDB basta con ejecutar, en una terminal distinta:
+
+mongo
+
+
+

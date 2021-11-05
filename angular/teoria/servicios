@@ -1,0 +1,8 @@
+1) Importar HttpClienModule en el fichero app.modules.ts
+2) Colocar la URL de la API en el environment.ts y tambien en el archivo environment de produccion
+3) Colocar en el constructor del servicio generado (Digimon Service) una propiedad privada donde se solicite el servicio HttpClient
+4) Crear un metodo en el servicio generado que retorne this.HttpClient.get(environment.trl) (HttpClient es la propiedad privada que se pasa por aprametro al constructor del servicio)
+5)Crear la ruta en donde vamos a renderizar la pagina
+6)Colocar en el fichero app.component.html <route-outlet></route-outlet>
+7)Solicutar el servicio de DigimondService en el constructor de digimondComponent y almacenarlo en una variable en este caso "digimonService"
+8) Posteriormente en la variable donde solicitamos el servicio ("digimonService"), se debe llamar al metodo de interes que este en ese servicio en este caso "getAll()" y luego hacer la subscripcion.

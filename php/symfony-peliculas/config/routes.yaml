@@ -1,0 +1,4 @@
+#holamundo:
+#    path: /holamundo
+#    controller: App\Controller\DefaultController::homepage
+

@@ -1,0 +1,63 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "aa945fd97eacc04cbb1f1b163a9631d6",
+    "packages": [
+        {
+            "name": "ulabox/nif-validator",
+            "version": "v1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ulabox/nif-validator.git",
+                "reference": "fcd0384736b232a874544d13976925047297deb0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ulabox/nif-validator/zipball/fcd0384736b232a874544d13976925047297deb0",
+                "reference": "fcd0384736b232a874544d13976925047297deb0",
+                "shasum": ""
+            },
+            "require": {
+                "php": "~7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "NifValidator\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Albert Casademont",
+                    "email": "albert@ulabox.com"
+                }
+            ],
+            "description": "Yet another(?) PHP implementation of the spanish NIF validator",
+            "homepage": "https://github.com/ulabox/nif-validator",
+            "keywords": [
+                "NIF",
+                "validator"
+            ],
+            "time": "2017-08-02T13:36:53+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
+}

@@ -1,0 +1,49 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans';         
+}
+
+
+
+.contenedor {
+    width: 80%;
+    margin:20px auto;
+    background-color: antiquewhite;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.reloj {
+    margin: 25px;
+    padding: 25px;
+    border:2px solid red;
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;    
+}
+
+button {
+    padding: 20px;
+    margin: 10px;
+    font-size: 25px;
+    outline: 0px;
+}
+
+h1 {
+    font-size: 55px;
+}
+
+#arrancar-reloj {
+    background-color: lightgreen;
+}
+#parar-reloj {
+    background-color: lightcoral;     
+}

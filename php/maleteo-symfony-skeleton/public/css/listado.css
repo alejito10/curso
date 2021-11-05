@@ -1,0 +1,22 @@
+.contenedor {
+}
+.tabla {
+	border-collapse: collapse;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+.encabezado td {
+	font-size: 50px;
+	text-decoration: underline;
+	border: 5px solid black;
+}
+td {
+	padding: 40px;
+	text-align: left;
+}
+.lista td {
+	font-size: 25px;
+	border: 1px solid black;
+}

@@ -1,0 +1,20 @@
+"or""=" sql inyection, entra en cualquier lado
+cuando metes un fichero es obligatorio poner un enctype en el form
+las cookies son ficheros donde se puede guardar informacion de lo que estas haciendo en esa pagina.
+
+configuarar el xdebug
+clonar el repositorio y cambiar el usuario y el uid, bajarse repositorio slider.
+
+ejercicio de profesor, concertirlo con autoload y namespace y hacer el ejercicio de nif validator.
+hacer para este finde los ejercicios de php.
+
+composer init
+comando para instalar la libreria
+require y meter el autoload
+
+pasar un objeto de en la zona de asignatura.
+
+excepciones-->son utilizadas en el caso de que se produzca un error.
+try{
+thow new exception("no se ha podido conectar");
+}catch(excepcion){echo "intentelo de nuevo mas tarde"}

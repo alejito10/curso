@@ -1,0 +1,56 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Log in!{% endblock %}
+
+{% block body %}
+{% block header %}
+		<header class="logo-header">
+			<picture>
+				<a href="{{path('maleteo')}}"><img  src="assets/img/logo.svg" alt="logo" /></a>
+			</picture>
+		</header>
+	{% endblock %}
+<form class="contacto-formulario" method="post" >
+    {% if error %}
+        <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+    {% endif %}
+
+    {% if app.user %}
+        <div class="mb-3">
+            You are logged in as {{ app.user.username }}, <a href="{{ path('app_logout') }}">Logout</a>
+        </div>
+    {% endif %}
+
+   
+    <div class="campo-formulario">
+	    <p class="titulo-medio">Identificate</p>
+	</div>
+	<div class="campo-formulario">
+		<p>Email</p>
+		<input type="text" name="email" placeholder="Alejandro@gmail.com" value="{{last_username}}" id="inputEmail" required autofocus/>
+	</div>
+	<div class="campo-formulario">
+		<p>Contraseña</p>
+		<input type="password" name="password" placeholder="contraseña" id="inputPassword" required/>
+	</div>
+
+    <input type="hidden" name="_csrf_token"
+           value="{{ csrf_token('authenticate') }}"
+    >
+
+   
+
+        <div class="checkbox mb-3">
+            <label>
+                <input type="checkbox" name="_remember_me"> Remember me
+            </label>
+        </div>
+    
+    <div class="campo-formulario">
+    <button type="submit">
+        Entrar
+    </button>
+    </div>
+    
+</form>
+{% endblock %}

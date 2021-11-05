@@ -1,0 +1,54 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans';         
+}
+
+.contenedor {
+    width:80%;
+    overflow: auto;
+    padding: 30px;
+
+    margin:20px auto;
+    background-color: antiquewhite;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+.alarma {
+    padding: 25px;
+    border:2px solid red;
+}
+
+input {
+    padding: 20px;
+    font-size: 35px;
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;    
+}
+
+button {
+    padding: 20px;
+    margin: 10px;
+    font-size: 25px;
+    outline: 0px;
+}
+
+h1 {
+    font-size: 55px;
+}
+
+#arrancar-alarma {
+    background-color: lightgreen;
+}
+#parar-alarma {
+    background-color: lightcoral;     
+}

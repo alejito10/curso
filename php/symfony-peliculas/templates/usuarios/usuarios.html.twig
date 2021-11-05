@@ -1,0 +1,27 @@
+{% extends "base.html.twig" %}
+
+{% block content %}
+    <table>
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Puntuacion</th>
+            <th>Universidad</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for usuario in usuarios %}
+            <tr>
+            <th>{{usuario.nombre | default ('anonimo')}}</th>
+            <th>{{usuario.puntuacion}}</th>
+            <th>{{usuario.universidad}}</th>
+        </tr>
+    {% endfor %}
+    </tbody>
+    
+</table>
+
+
+
+
+{% endblock %}

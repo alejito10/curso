@@ -1,0 +1,34 @@
+{% extends "base.html.twig" %}
+{% block stylesheets %}
+    {{ parent() }}
+
+    <link href="{{ asset('css/registrarse.css') }}" type="text/css" rel="stylesheet" />
+{% endblock %}
+{% block body %}
+
+	{% block header %}
+		<header class="logo-header">
+			<picture>
+				<a href="{{path('maleteo')}}"><img  src="assets/img/logo.svg" alt="logo" /></a>
+			</picture>
+		</header>
+	{% endblock %}
+<form class="contacto-formulario" method="POST" action="/registro">
+    <div class="campo-formulario">
+	    <p class="titulo-medio">Registrate</p>
+	</div>
+	<div class="campo-formulario">
+		<p>Email</p>
+		<input type="text" name="email" placeholder="Alejandro@gmail.com" />
+	</div>
+	<div class="campo-formulario">
+		<p>Contraseña</p>
+		<input type="password" name="password" placeholder="contraseña" />
+	</div>
+    <div class="campo-formulario">
+		<button>SUSCRIBIRSE</button>
+	</div>
+
+</form>
+
+{% endblock %}
